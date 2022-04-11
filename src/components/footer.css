@@ -1,0 +1,31 @@
+.footer {
+    width: 100vw;
+    background-color: var(--navy);
+    color: var(--dusty);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Philosopher', 'sans-serif';
+}
+
+.footer-left, .footer-right {
+    padding: 10px 20px;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-right {
+    align-items: flex-end;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer h2 {
+    margin: 0;
+    padding: 20px 0;
+    color: var(--blush);
+}
