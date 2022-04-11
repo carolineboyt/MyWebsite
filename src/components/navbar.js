@@ -7,7 +7,7 @@ const Navbar = () => {
         <nav>
             <ul>
                 <li><Link to="../">about me</Link></li>
-                <li><Link to="#">my experience</Link></li>
+                <li><Link to="../experience">my experience</Link></li>
             </ul>
             <div className="logo">
                 <h2>caroline boyt</h2>

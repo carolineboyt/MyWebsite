@@ -3,7 +3,7 @@ import './index.css'
 
 import Footer from '../components/footer'
 import Navbar from '../components/navbar'
-import headshot from '../images/headshot.jpg'
+import headshot from '../images/headshot3.jpg'
 
 
 // markup

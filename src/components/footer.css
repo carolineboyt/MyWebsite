@@ -6,6 +6,7 @@
     justify-content: space-between;
     align-items: center;
     font-family: 'Philosopher', 'sans-serif';
+    height: 8vh;
 }
 
 .footer-left, .footer-right {

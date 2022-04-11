@@ -6,6 +6,7 @@ nav {
     background-color: var(--navy);
     font-family: 'Philosopher', sans-serif;
     position: sticky;
+    height: 12vh;
 }
 
 nav ul {
@@ -36,14 +37,14 @@ nav .logo {
 }
 
 nav .logo h2 {
-    color: var(--dusty);
+    color: var(--blush);
     margin: 0;
     padding-bottom: 10px;
-    font-size: xx-large;
+    font-size: 40px;
 }
 
 nav .logo h3 {
-    color: var(--blush);
+    color: var(--dusty);
     margin: 0;
-    font-size: larger;
+    font-size: x-large;
 }
