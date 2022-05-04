@@ -12,6 +12,7 @@ import headshot from '../images/headshot3.jpg'
 const IndexPage = () => {
   return (
     <div className="home-page">
+      <title>Caroline Boyt</title>
       <div className="home-wrapper">
       <div className="nav-container">
         <Navbar/>

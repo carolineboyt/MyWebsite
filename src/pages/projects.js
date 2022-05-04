@@ -18,6 +18,7 @@ import './projects.css'
 const Projects = () => {
     return (
         <div className="projects-page">
+            <title>Projects - Caroline Boyt</title>
             <div className="projects-wrapper">
                 <div className="nav-container">
                     <Navbar/>

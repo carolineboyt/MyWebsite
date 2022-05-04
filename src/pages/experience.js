@@ -8,6 +8,7 @@ import Navbar from '../components/navbar'
 const Experience = () => {
   return (
     <div className="experience-page">
+      <title>Experience - Caroline Boyt</title>
       <div className="nav-container">
         <Navbar/>
       </div>
