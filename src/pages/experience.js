@@ -4,7 +4,6 @@ import './experience.css'
 
 import Footer from '../components/footer'
 import Navbar from '../components/navbar'
-import headshot from '../images/headshot.jpg'
 
 const Experience = () => {
   return (
@@ -21,20 +20,63 @@ const Experience = () => {
           title="Software Engineering Intern"
           dates="January 2019 - December 2019"
           bullets={[
-            "Updated Fortis iOS apps to adhere to accessibility standards.",
-            "Assisted in design and implementation of new features for Fortis iOS apps in Swift and SwiftUI.",
-            "Wrote UI and Unit Tests for Fortis iOS apps."
+            {
+              title: "Accessibility",
+              content: "My first project at Fortis was to update their existing iOS apps to adhere to Apple's accessibility standards. This included implementing dynamic type capabilities and adjusting color contrast to adhere color blindness standards. This was a great way to dip my toe into learning Swift, and also inspired a passion for creating fully accesible applications."
+            },
+            {
+              title: "iOS App Design and Implementation",
+              content: "After updating the existing apps for accessibility, I was able to assist our mobile designer as he created the vision for new apps and features. I also began to create the front end of one of the new apps, using both Swift and SwiftUI. This was a great learning experience for me, as I has access to a sturdy starting point from the existing apps, but was challenged to create something new from the old."
+            },
+            {
+              title: "iOS Testing",
+              content: "say something here about writing UI and Unit tests, and general debugging."
+            }
+            
+            
           ]}
         />
         <JobPanel 
           company="Clemson University Choirs"
           title="Administrative Assistant"
           dates="March 2020 - May 2022"
+          bullets={[
+            {
+              title: "Website Reconstruction",
+              content: "One of my proudest accomplishments during my time working in the choral department at Clemson was redesigning our website and rebuilding it completely from scratch. This was a huge challenge for me, as I had never had a chance to refine my design skills, and building an entire website was a massive undertaking, especically on top of my existing schoolwork. I am incredibly proud of what I was able to accomplish, and was so excited to share it with the Clemson community and the world."
+            },
+            {
+              title: "Content Creation and Social Media Management",
+              content: "The first project I inherited from the previous Administrative Assistant was producing the Clemson Choirs and Vocal Arts Spotlight Series. This project consisted of scheduling recording sessions, shooting video from multiple angles, working closely with audio technology students, and editing all of the footage. I was able to produce 10 videos for the Spotlight Series in the two semesters I was in charge of it, and was also tasked with managing uploading these videos, and other content, to Clemson Choirs' multiple social media accounts."
+            },
+            {
+              title: "Ensemble Management",
+              content: "As an administrative assistant, I was very involved in managing the day to day operations of each choir ensemble. Managing concerts, recording sessions, and student requests for up to 6 ensembles could be stressful at times, but I had the opportunity to learn how to make a seemingly overwhelming situation feel manageable. My greatest accomplishment in this regard was planning the annual Sounds of the Season Concert, a performance that includes all 6 ensembles, a small orchestra, and solo performances."
+            }
+            
+            
+          ]}
         />
         <JobPanel 
           company="Clemson University General Engineering"
           title="Undergraduate Teaching Assistant"
           dates="January 2018 - May 2018"
+          bullets={[
+            {
+              title: "Accessibility",
+              content: "My first project at Fortis was to update their existing iOS apps to adhere to Apple's accessibility standards. This included implementing dynamic type capabilities and adjusting color contrast to adhere color blindness standards. This was a great way to dip my toe into learning Swift, and also inspired a passion for creating fully accesible applications."
+            },
+            {
+              title: "iOS App Design and Implementation",
+              content: "After updating the existing apps for accessibility, I was able to assist our mobile designer as he created the vision for new apps and features. I also began to create the front end of one of the new apps, using both Swift and SwiftUI. This was a great learning experience for me, as I has access to a sturdy starting point from the existing apps, but was challenged to create something new from the old."
+            },
+            {
+              title: "iOS Testing",
+              content: "say something here about writing UI and Unit tests, and general debugging."
+            }
+            
+            
+          ]}
         />
       </div>
       
@@ -69,11 +111,14 @@ const JobPanel = (props) => {
         </div>
         {showMore ?
         <div className="show-more-active">
-          <ul>
-            {props.bullets.map((item, index) =>
-              <li key={index}>{item}</li>
-            )}
-          </ul>
+          {props.bullets.map(item => {
+            return(
+              <div className="bullet">
+                <h3>{item.title}</h3>
+                <p>{item.content}</p>
+              </div>
+            );
+          })}
           <button onClick={toggleShowMore}>see less</button>
         </div>
         :

@@ -10,7 +10,7 @@
 }
 
 .footer-left, .footer-right {
-    padding: 10px 20px;
+    padding: 5px 60px;
     width: 20vw;
     display: flex;
     flex-direction: column;

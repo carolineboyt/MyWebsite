@@ -5,6 +5,7 @@
     font-family: 'Arsenal', 'sans-serif';
     color: var(--navy);
     height: 80vh;
+    overflow: scroll;
 }
 
 .job-panel {
@@ -58,6 +59,21 @@
 .show-more-active li {
     font-size: medium;
     padding: 10px 0;
+}
+
+.bullet {
+    display: flex;
+    flex-direction: column;
+    color: var(--navy);
+    padding: 0 50px;
+}
+
+.bullet h3 {
+    margin: 0;
+}
+
+.bullet p {
+    padding-left: 20px;
 }
 
 .footer-container {
