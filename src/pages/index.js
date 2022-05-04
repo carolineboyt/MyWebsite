@@ -28,6 +28,7 @@ const IndexPage = () => {
         <div className="buttons">
           <Link to="../projects"><CustomButton label="see my past work"/></Link>
           <Link to="../experience"><CustomButton label="see my experience"/></Link>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtfxKwlaxMwI_XyVfgs46Mn1HJGJkkaVogUis_1fH_fGV95w/viewform?usp=sf_link" target="_blank"><CustomButton label="contact me"/></a>
         </div>
         
       </div>
