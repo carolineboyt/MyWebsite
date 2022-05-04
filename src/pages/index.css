@@ -92,9 +92,10 @@ h1 {
     align-self: center;
     height: 15vh;
     justify-content: space-around;
+    margin-bottom: 20px;
 }
 
-.footer-container {
+/* .footer-container {
     position: sticky;
     bottom: 0;
-}
+} */

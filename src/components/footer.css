@@ -11,10 +11,14 @@
 
 .footer-left, .footer-right {
     padding: 5px 60px;
-    width: 20vw;
+    width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.footer-top {
+    display: none;
 }
 
 .footer-right {
@@ -29,4 +33,29 @@
     margin: 0;
     padding: 20px 0;
     color: var(--blush);
+}
+
+@media only screen and (max-width: 906px) {
+    .footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer-left {
+        display: none;
+    }
+
+    .footer-top {
+        padding: 5px 60px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-right {
+        align-items: center;
+        margin-bottom: 20px;
+    }
 }

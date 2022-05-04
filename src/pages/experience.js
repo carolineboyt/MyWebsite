@@ -30,7 +30,7 @@ const Experience = () => {
             },
             {
               title: "iOS Testing",
-              content: "say something here about writing UI and Unit tests, and general debugging."
+              content: "The biggest challenge I faced at Fortis was the task of writing UI and Unit tests in Swift for the existing iOS apps. I was already learning a brand new language, and the syntax used for Unit testing felt even more foreign. I definitely struggled, but was able to use this as a learning opportunity, and asked my mentor to walk me through the first test. After he helped me understand how testing worked, I was able to complete the rest of the tests, and continue to make sure the apps were working smoothly."
             }
             
             
