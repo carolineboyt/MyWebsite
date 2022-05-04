@@ -1,5 +1,6 @@
 import * as React from "react"
 import './index.css'
+import { Link } from "gatsby"
 
 import CustomButton from '../components/custom-button'
 import Footer from '../components/footer'
@@ -24,8 +25,8 @@ const IndexPage = () => {
         <p>I chose to pursue a career in Software Engineering to create websites, apps, and other technologies that can help communities in need. My ultimate goal is to start a company that helps small businesses run by members of marginalized communities establish online presences that will help them succeed.</p>
         <p>I am beginning my career as an Associate Software Engineer at Arccos Golf, a company that develops connected golf products. I will be working on their subscriber web portal, and am looking forward to learning more about full-stack web development in this role.</p>
         <div className="buttons">
-          <CustomButton label="see my past work"/>
-          <CustomButton label="see my experience"/>
+          <Link to="../projects"><CustomButton label="see my past work"/></Link>
+          <Link to="../experience"><CustomButton label="see my experience"/></Link>
         </div>
         
       </div>
